@@ -41,7 +41,7 @@ const Location = () => (
             </div>
           </div>
           <a
-            href="https://maps.google.com/maps/dir/?api=1&destination=20.9323737,74.7626246"
+            href="https://www.google.com/maps/dir/?api=1&destination=Venushree+Clinic"
             target="_blank"
             rel="noopener noreferrer"
           >
