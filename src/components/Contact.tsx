@@ -35,7 +35,7 @@ const Contact = () => (
             icon: MapPin,
             title: "Address",
             desc: "Rajguru Nagar Rd, Mangalmurti Colony, Dhule, Maharashtra",
-            action: () => window.open("https://www.google.com/maps/dir/?api=1&destination=20.9323737,74.7626246", "_blank"),
+            action: () => window.open("https://maps.google.com/maps/dir/?api=1&destination=20.9323737,74.7626246", "_blank"),
             btnText: "Get Directions",
           },
           {
