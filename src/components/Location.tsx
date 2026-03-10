@@ -23,7 +23,7 @@ const Location = () => (
       >
         <iframe
           title="Venushree Clinic Location"
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1500!2d74.7626246!3d20.9323737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU1JzU2LjUiTiA3NMKwNDUnNDUuNCJF!5e0!3m2!1sen!2sin!4v1700000000000"
+          src="https://www.google.com/maps?q=20.9323737,74.7626246&output=embed"
           width="100%"
           height="400"
           style={{ border: 0 }}
