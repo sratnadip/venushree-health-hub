@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://venushree-health-hub.vercel.app/sitemap.xml
