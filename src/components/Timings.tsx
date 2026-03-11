@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { Clock } from "lucide-react";
 
 const schedule = [
-  { day: "Monday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Tuesday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Wednesday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Thursday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Friday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Saturday", hours: "10:00 AM – 1:00 PM, 6:00 PM – 9:00 PM", open: true },
-  { day: "Sunday", hours: "Closed", open: false },
+  { day: "Monday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Tuesday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Wednesday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Thursday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Friday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Saturday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
+  { day: "Sunday", hours: "9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM", open: true },
 ];
 
 const Timings = () => {

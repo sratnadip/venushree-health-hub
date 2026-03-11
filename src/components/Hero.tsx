@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative pt-20 md:pt-24 overflow-hidden">
       <div className="absolute inset-0 bg-hero-gradient opacity-[0.03]" />
-      <div className="container mx-auto px-4 py-12 md:py-20">
+      <div className="container relative z-10 mx-auto px-4 py-12 md:py-20">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -28,34 +28,34 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
-              <a href="#appointment">
-                <Button size="lg" className="gap-2 bg-hero-gradient border-0 text-primary-foreground hover:opacity-90 shadow-lg">
+              <Button asChild size="lg" className="gap-2 bg-hero-gradient border-0 text-primary-foreground hover:opacity-90 shadow-lg">
+                <a href="#appointment">
                   <Calendar className="w-5 h-5" />
                   Book Appointment
-                </Button>
-              </a>
-              <a href="tel:9421884732">
-                <Button size="lg" variant="outline" className="gap-2">
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="gap-2">
+                <a href="tel:9421884732">
                   <Phone className="w-5 h-5" />
                   Call Clinic
-                </Button>
-              </a>
-              <a
-                href="https://maps.google.com/maps/dir/?api=1&destination=20.9323737,74.7626246"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" variant="outline" className="gap-2">
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="gap-2">
+                <a
+                  href="https://maps.app.goo.gl/VYwFWvP9wonAJkdP8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <MapPin className="w-5 h-5" />
                   Get Directions
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span>Mon–Sat: 10 AM – 1 PM, 6 – 9 PM</span>
+                <span>Mon–Sun: 9:30 AM – 1:00 PM, 6:00 PM – 9:30 PM</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground mt-2">

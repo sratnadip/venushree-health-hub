@@ -8,8 +8,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 const timeSlots = [
-  "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
-  "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM",
+  "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
+  "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM",
 ];
 
 const AppointmentBooking = () => {
@@ -59,6 +59,20 @@ const AppointmentBooking = () => {
 
     setSuccess(true);
     toast.success("Appointment booked successfully!");
+
+    // Construct WhatsApp message
+    const message = `*New Appointment Booking!* 📅
+*Patient Name:* ${form.name.trim()}
+*Phone:* ${form.phone.trim()}
+*Date:* ${form.date}
+*Time:* ${form.timeSlot}
+${form.reason ? `*Reason:* ${form.reason.trim()}` : ""}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/919421884732?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, "_blank");
   };
 
   if (success) {

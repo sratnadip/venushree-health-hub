@@ -23,7 +23,7 @@ const Location = () => (
       >
         <iframe
           title="Venushree Clinic Location"
-          src="https://www.google.com/maps?q=20.9323737,74.7626246&z=16&output=embed"
+          src="https://www.google.com/maps?q=20.9324377,74.7617356&z=16&output=embed"
           width="100%"
           height="400"
           style={{ border: 0 }}
@@ -40,16 +40,16 @@ const Location = () => (
               <p className="text-sm text-muted-foreground">Rajguru Nagar Rd, Mangalmurti Colony, Dhule, Walwadi, Maharashtra 424002</p>
             </div>
           </div>
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=Venushree+Clinic"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="gap-2 bg-hero-gradient border-0 text-primary-foreground hover:opacity-90 shrink-0">
+          <Button asChild className="gap-2 bg-hero-gradient border-0 text-primary-foreground hover:opacity-90 shrink-0">
+            <a
+              href="https://maps.app.goo.gl/VYwFWvP9wonAJkdP8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Navigation className="w-4 h-4" />
               Open in Google Maps
-            </Button>
-          </a>
+            </a>
+          </Button>
         </div>
       </motion.div>
     </div>
