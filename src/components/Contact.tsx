@@ -15,7 +15,7 @@ const Contact = () => (
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">Contact Us</h2>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 mb-10">
         {[
           {
             icon: Phone,
@@ -52,22 +52,24 @@ const Contact = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="p-6 rounded-2xl bg-background border border-border shadow-card text-center"
+            className="p-3 md:p-6 rounded-2xl bg-background border border-border shadow-card text-center flex flex-col h-full"
           >
-            <div className="w-12 h-12 mx-auto rounded-xl bg-secondary flex items-center justify-center mb-4">
-              <item.icon className="w-6 h-6 text-secondary-foreground" />
+            <div className="w-10 h-10 md:w-12 md:h-12 mx-auto rounded-xl bg-secondary flex items-center justify-center mb-3 md:mb-4 shrink-0">
+              <item.icon className="w-5 h-5 md:w-6 md:h-6 text-secondary-foreground" />
             </div>
-            <h3 className="font-bold text-foreground mb-1">{item.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4">{item.desc}</p>
+            <h3 className="font-bold text-foreground mb-1 text-sm md:text-base">{item.title}</h3>
+            <p className="text-xs md:text-sm text-muted-foreground mb-4">{item.desc}</p>
             {item.btnText && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={item.action}
-                className="w-full"
-              >
-                {item.btnText}
-              </Button>
+              <div className="mt-auto">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={item.action}
+                  className="w-full text-xs md:text-sm h-8 md:h-9 px-2"
+                >
+                  {item.btnText}
+                </Button>
+              </div>
             )}
           </motion.div>
         ))}
